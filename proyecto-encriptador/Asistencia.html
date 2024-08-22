@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirma tu Asistencia</title>
+    <link rel="stylesheet" href="Asistencia.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h3>1-2-3</h3>
+    
+    
+        <!-- Contenedor del video de fondo -->
+        <div class="video-background">
+            <video autoplay muted loop>
+                <source src="video/Y2meta.app-Smoke on black background 10 HD   Humo sobre fondo negro 10 HD.mp4" type="video/mp4">
+                Tu navegador no soporta el formato de video.
+            </video>
+        </div>
+    <div class="container">
+        <h1>Confirmación de Asistencia a Fiesta de Halloween</h1>
+        <form id="attendanceForm">
+            <label for="name">NOMBRE:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="key">CLAVE:</label>
+            <input type="text" id="key" name="key" required>
+            <button type="submit">Confirmar Asistencia</button>
+        </form>
+        <div id="result" class="hidden">
+            <p>Nombre Encriptado:</p>
+            <input type="text" id="encryptedName" readonly>
+            <p>Nombre Desencriptado:</p>
+            <input type="text" id="decryptedName" readonly>
+            
+            <button id="backButton"><a href="inicio.html">Regresar al Inicio</a></button>
+        </div>
+    </div>
+    <script src="Asistencia.js"></script>
+
+</body>
+</html>

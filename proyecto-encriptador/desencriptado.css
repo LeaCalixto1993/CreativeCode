@@ -1,0 +1,247 @@
+/* Estilos existentes */
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 2px solid #f00;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 3em;
+    color: #f00;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 1.5em;
+    color: #f00;
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.8);
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #f00;
+    background-color: #222;
+    color: #fff;
+    font-size: 1.2em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+}
+
+button {
+    background-color: #f00;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #a00;
+}
+
+.result {
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #f00;
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.8);
+}
+
+#decodedMessage {
+    font-size: 1.5em;
+    color: #fff;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid #f00;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+}
+/* Contenedor del video de fondo */
+.video-background {
+    position: fixed; /* Cambiado a fixed para cubrir toda la ventana */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Envía el video al fondo */
+}
+
+/* Estiliza el video para cubrir toda la pantalla */
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que el video cubra todo el contenedor */
+    transform: translate(-50%, -50%); /* Centra el video */
+}
+
+/* Nuevos estilos para la sección de disfraces */
+.costume-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #f00;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.costume-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.costume-container .form-group {
+    margin-bottom: 20px;
+}
+
+.costume-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #f00;
+    background-color: #222;
+    color: #fff;
+    font-size: 1.2em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+}
+
+/* Estilos adicionales para la sección de desencriptación en lista de disfraces */
+#encodedCostume {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #f00;
+    background-color: #222;
+    color: #fff;
+    font-size: 1.2em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+}
+
+button {
+    background-color: #f00;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #a00;
+}
+
+/* Estilos adicionales para la sección de desencriptación en lista de disfraces */
+#encodedCostume {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #f00;
+    background-color: #222;
+    color: #fff;
+    font-size: 1.2em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+}
+
+button {
+    background-color: #f00;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+    transition: background-color 0.3s ease;
+    
+}
+
+button:hover {
+    background-color: #a00;
+}
+
+.principio {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #f00;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.principio h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.principio .form-group {
+    margin-bottom: 20px;
+}
+
+.principio input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #f00;
+    background-color: #222;
+    color: #fff;
+    font-size: 1.2em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+}
+.button-terrific {
+    font-family: "Creepster", system-ui;
+    position:relative;
+    display: inline-block; /* Asegura que se comporta como un botón */
+    margin: 10px; /* Espaciado opcional entre los botones */
+    padding: 15px 30px;
+    font-size:50;
+    color: #f5f5f5; /* Color claro para contraste con el fondo oscuro */
+    background: linear-gradient(135deg, #000000, #f00); /* Degradado de negro a rojo */
+    border: 2px solid #f00; /* Borde rojo sangre */
+    border-radius: 10px;
+    cursor: pointer;
+    text-shadow: 0 0 5px #d32f2f, 0 0 10px #d32f2f;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8), 0 0 15px rgba(0, 0, 0, 0.7); /* Sombra para un efecto flotante */
+    transition: background 0.3s, border-color 0.3s, transform 0.2s, box-shadow 0.2s;
+    overflow: hidden;
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    vertical-align: middle;
+    margin-left: 330px;
+}
+.boton123{
+               display: flex;
+            align-items: center; /* Alinea los botones verticalmente al centro */
+}

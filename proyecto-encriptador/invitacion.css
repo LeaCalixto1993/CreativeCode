@@ -1,0 +1,166 @@
+
+body {
+    font-family: "Creepster", system-ui;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.video-background {
+    position: fixed; /* Fija el video en su posición */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    overflow: hidden; /* Oculta cualquier parte del video que se desborde */
+    z-index: -1; /* Coloca el video detrás del contenido */
+}
+
+.video-background video {
+    position: absolute; /* Posiciona el video absolutamente dentro del contenedor */
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que el video cubra todo el contenedor sin distorsionar */
+    transform: translate(-50%, -50%); /* Centra el video */
+}
+
+.content {
+    position: relative; /* Relativo para estar encima del video */
+    z-index: 1; /* Asegura que el contenido esté encima del video */
+    color: white; /* Cambia el color del texto para que contraste con el fondo del video */
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+}
+
+img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.halloween-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #e25822;
+    border: 2px solid #e25822;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, border-color 0.3s;
+    text-align: center;
+    display: inline-block;
+}
+
+.halloween-button:hover {
+    background-color: transparent;
+    border-color: #fff;
+    color: #e25822;
+}
+
+p {
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #7e3939;
+    font-size: 100px;
+}
+
+/* Aplica un contorno negro al texto en el <p> */
+p{
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #310b0b; /* Color del texto */
+    font-size: 100px;
+    text-shadow: 
+        -2px -2px 0 #704f4f,  
+         2px -2px 0 #ffffff,
+        -2px  2px 0 #ffffff,
+         2px  2px 0 #ffffff;
+}
+
+/* Aplica un contorno negro al texto en el botón */
+h1{
+    position: relative;
+    z-index: 1; /* Asegura que el texto esté encima del efecto de fondo */
+    font-weight: bold;
+    color: #310b0b; /* Color del texto */
+    text-shadow: 
+        -1px -1px 0 #704f4f,  
+         1px -1px 0 #ffffff,
+        -1px  1px 0 #ffffff,
+         1px  1px 0 #ffffff;
+}
+
+
+.video-container {
+    position: relative;
+    width: 50%; /* Ancho del contenedor al 50% del elemento padre */
+    max-width: 400px; /* Máximo ancho del contenedor */
+    margin: 0 auto; /* Centra el contenedor en el medio */
+    overflow: hidden; /* Oculta cualquier parte del video que se desborde */
+}
+
+.video-container video {
+    width: 100%;
+    height: auto; /* Mantiene la relación de aspecto del video */
+}
+
+.button-terrific {
+    font-family: "Creepster", system-ui;
+    position: relative;
+    display: inline-block; /* Asegura que se comporta como un botón */
+    margin: 20px;
+    padding: 15px 30px;
+    font-size: 2.8rem;
+    color: #f5f5f5; /* Color claro para contraste con el fondo oscuro */
+    background: linear-gradient(135deg, #000000, #c62828); /* Degradado de negro a rojo */
+    border: 2px solid #d32f2f; /* Borde rojo sangre */
+    border-radius: 10px;
+    cursor: pointer;
+    text-shadow: 0 0 5px #d32f2f, 0 0 10px #d32f2f;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8), 0 0 15px rgba(0, 0, 0, 0.7); /* Sombra para un efecto flotante */
+    transition: background 0.3s, border-color 0.3s, transform 0.2s, box-shadow 0.2s;
+    overflow: hidden;
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+.button-terrific::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(255,0,0,0.6) 0%, rgba(0,0,0,0) 70%);
+    border-radius: 50%;
+    transition: width 0.5s, height 0.5s;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+}
+
+.button-terrific:hover::before {
+    width: 0;
+    height: 0;
+}
+
+.button-terrific:hover {
+    background: linear-gradient(135deg, #000000, #b71c1c); /* Degradado de negro a rojo más oscuro para el hover */
+    border-color: #b71c1c;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8), 0 0 25px rgba(0, 0, 0, 0.7); /* Efecto de sombra intensa */
+    transform: scale(1.1); /* Efecto de ampliación */
+}
+
+.button-terrific span {
+    position: relative;
+    z-index: 1; /* Asegura que el texto esté encima del efecto de fondo */
+    font-weight: bold;
+}

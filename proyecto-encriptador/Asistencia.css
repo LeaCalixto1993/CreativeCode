@@ -1,0 +1,127 @@
+/* Estilo general del cuerpo */
+body {
+    background: url('https://www.transparenttextures.com/patterns/dark-paper.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #e6e6e6;
+    font-family: 'Creepster', cursive; /* Fuente espeluznante */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Estilo del contenedor del formulario */
+.container {
+    margin: 100px auto;
+    padding: 20px;
+    background-color: rgba(17, 2, 2, 0.918);
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Estilo del título */
+h1 {
+    font-size: 2.7em;
+    color: #f00;
+    text-shadow: 2px 2px 5px #000000;
+}
+
+/* Estilo del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo de las etiquetas */
+label {
+    margin: 15px 0;
+    font-size: 1.7em;
+    color: #f00;
+}
+
+/* Estilo de los campos de entrada */
+input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 300px;
+    background-color: #333;
+    color: #e6e6e6;
+    box-shadow: 0px 0px 5px #ff6600 inset;
+}
+
+/* Estilo del botón */
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #ec0909;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow:  rgba(255, 0, 0, 0.6);
+}
+
+button:hover {
+    background-color: #cc0000;
+}
+
+/* Estilo para el resultado */
+#result {
+    margin-top: 20px;
+}
+
+#result p {
+    font-size: 1.2em;
+    color: #ff3333;
+}
+
+/* Ocultar elementos inicialmente */
+.hidden {
+    display: none;
+}
+
+/* Estilo del campo de texto encriptado */
+#encryptedName {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 80%;
+    max-width: 300px;
+    background-color: #333;
+    color: #e6e6e6;
+    box-shadow:  rgba(255, 0, 0, 0.6);
+}
+.video-background {
+    position: fixed; /* Fija el video en su posición */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    overflow: hidden; /* Oculta cualquier parte del video que se desborde */
+    z-index: -1; /* Coloca el video detrás del contenido */
+}
+
+.video-background video {
+    position: absolute; /* Posiciona el video absolutamente dentro del contenedor */
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que el video cubra todo el contenedor sin distorsionar */
+    transform: translate(-50%, -50%); /* Centra el video */
+}
+.hidden {
+    display: none;
+}
+
+#result {
+    margin-top: 20px;
+}

@@ -1,0 +1,100 @@
+p{color:rgb(223, 209, 19);
+     display: none;}
+     body {
+        font-family: "Creepster", system-ui;
+        font-weight: 500;
+        font-style: normal; ;
+        text-align: center; 
+        margin: 0;
+        padding: 0;
+        color: rgb(102, 6, 6);
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150vh;
+        position: relative;
+        z-index: 2;
+    }
+    .form-container {
+        background-color:hwb(0 3% 97%);
+        padding: 15px;
+        border-radius: 30px;
+        box-shadow: 0 0 10px rgba(245, 14, 14, 0.658);
+        position:relative;
+        z-index: 2;
+    }
+    input[type="text"] {
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 10px;
+    }
+    input[type="submit"] {
+        padding: 10px 20px;
+        background-color: rgba(245, 14, 14, 0.658);
+        border: none;
+        border-radius: 40px;
+        color:#ebc;
+        cursor: pointer;
+    }
+    #hero{
+        min-heigth: 100vh;
+        position:relative;
+    }
+    
+    
+    
+    .video-background {
+        position: fixed; /* Fija el video en su posición */
+        top: 0;
+        left: 0;
+        width: 100%; /* Ancho completo */
+        height: 100%; /* Alto completo */
+        overflow: hidden; /* Oculta cualquier parte del video que se desborde */
+        z-index: -1; /* Coloca el video detrás del contenido */
+    }
+    
+    /* Asegúrate de que el video cubra todo el contenedor */
+    .video-background video {
+        position: absolute; /* Posiciona el video absolutamente dentro del contenedor */
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Asegura que el video cubra todo el contenedor sin distorsionar */
+        transform: translate(-50%, -50%); /* Centra el video */
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    
+    /* Aplica un contorno negro al texto en el botón */
+    h1 {
+        position: relative;
+        z-index: 1; /* Asegura que el texto esté encima del efecto de fondo */
+        font-weight: bold;
+        color: #310b0b; /* Color del texto */
+        text-shadow: 
+            -1px -1px 0 #704f4f,  
+             1px -1px 0 #ffffff,
+            -1px  1px 0 #ffffff,
+             1px  1px 0 #ffffff;
+    }
+
+    .abcd {
+        font-size: 40px;
+    }
+    
+    .boton{
+        font-size: 20px;
+        font-family: "Creepster", system-ui;
+        background: linear-gradient(135deg, #000000, #b71c1c); /* Degradado de negro a rojo más oscuro para el hover */
+    border-color: #b71c1c;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8), 0 0 25px rgba(0, 0, 0, 0.7); /* Efecto de sombra intensa */
+    transform: scale(1.1);
+    }
+   
